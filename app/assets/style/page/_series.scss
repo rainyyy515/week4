@@ -1,0 +1,61 @@
+.series{
+  text-align: center;
+  li{
+    border: 1px solid #DCDCDC;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .focus{
+    padding-bottom: 8px;
+    border-bottom: 8px solid $primary;
+  }
+}
+.seriesBanner{
+  display: flex;
+  height: 296px;
+  .seriesBannerImg{
+    background-image: url(../images/product-header-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    @include pad{
+      background-image: url(../images/product-header-sm-1.png);
+    }
+  }
+  .seriesBannerImg2{
+    background-image: url(../images/product-header-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    @include pad{
+      background-image: url(../images/product-header-sm-2.png);
+    }
+  }
+}
+
+.seriesList{
+  h2{
+    font-size: 42px;
+  }
+}
+.pages{
+  a{
+    font-size: 18px;
+    color: #000;
+    &:focus{
+      color: $white;
+      background: #000;
+    }
+    &:hover{
+      background: #F2F2F2;
+    }
+  }
+  @include phone{
+    a{
+      font-size: 16px;
+      padding: 12px 12px;
+    }
+  }
+}

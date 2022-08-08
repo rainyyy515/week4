@@ -1,0 +1,49 @@
+.banner{
+  background-image: url(../images/home-header.png);
+  height: 787px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+  }
+  @include pad{
+    background-image: url(../images/home-header-sm.png);
+  }
+}
+
+.design{
+  background-image: url(../images/index-bg.png);
+  height: 608px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .designImg{
+    background-image: url(../images/home-section4-1.png);
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .designImg2{
+    background-image: url(../images/home-section4-2.png);
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @include pad{
+    background-image: url(../images/index-bg-md.png);
+    height: 960px;
+  }
+  @include phone{
+    background-image: url(../images/index-bg-sm.png);
+    height: 820px;
+    .designImg{
+      background-image: url(../images/home-section4-1-sm.png);
+    }
+    .designImg2{
+      background-image: url(../images/home-section4-2-sm.png);
+    }
+  }
+}

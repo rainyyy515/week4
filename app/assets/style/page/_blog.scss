@@ -1,0 +1,26 @@
+.blog{
+  a:hover{
+    color: $primary;
+  }
+  @include pad{
+    a{
+      display: none;
+    }
+  }
+  @include phone {
+    p{
+      display: none;
+    }
+  }
+}
+
+.valentine{
+  a:hover{
+    color: $primary;
+  }
+  i{
+    @include phone{
+      display: none;
+    }
+  }
+}

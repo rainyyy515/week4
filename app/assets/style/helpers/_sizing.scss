@@ -1,0 +1,35 @@
+@for $i from 1 through 300 {
+  .w-#{$i} {
+    width: $i * 4px;
+  }
+  .h-#{$i} {
+    height: $i * 4px;
+  }
+  @include pad {
+    .h-md-#{$i} {
+      height: $i * 4px !important;
+    }
+  }
+  @include pad {
+    .w-md-#{$i} {
+      width: $i * 4px !important;
+    }
+  }
+  @include phone {
+    .h-sm-#{$i} {
+      height: $i * 4px !important;
+    }
+  }
+  @include phone {
+    .w-sm-#{$i} {
+      width: $i * 4px !important;
+    }
+  }
+}
+.h-full{
+  height: 100%;
+  object-fit: cover;
+}
+.w-full{
+  width: 100%;
+}

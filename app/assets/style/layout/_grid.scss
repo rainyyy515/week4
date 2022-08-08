@@ -1,0 +1,54 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -($gutter/2);
+  margin-left: -($gutter/2);
+  @include phone{
+    .row-md{
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -($gutter/2);
+      margin-left: -($gutter/2);
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    max-width: ($i/12) * 100%;
+    flex: 0 0 ($i/12) * 100%;
+    padding-right: $gutter/2;
+    padding-left: $gutter/2;
+  }
+}
+@include pad {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      max-width: ($i/12) * 100%;
+      flex: 0 0 ($i/12) * 100%;
+    }
+  }
+}
+
+@include phone {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      max-width: ($i/12) * 100%;
+      flex: 0 0 ($i/12) * 100%;
+    }
+  }
+}
+
+//container
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+  @include pad{
+    max-width: 696px;
+  }
+  @include phone{
+    max-width: 348px;
+  }
+}
